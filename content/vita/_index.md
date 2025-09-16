@@ -17,10 +17,10 @@ A company which perhaps needs no introduction; my team is responsible for protec
 * Led Star+ On Disney+ Project
     * Negotiated scope, API contracts, delivery estimates, and legal requirements with technical and nontechnical stakeholders
     * Designed linear license and airing rights checks
-    * Delegated work among team of 8 other engineers
+    * Led team of 8 engineers to deliver work
     * Delivered implementation of airing checks and handling for live or unrated content
     * Product launched successfully on time and without incident
-* Let Shutdown of Legacy key management service
+* Led Shutdown of Legacy key management service
     * Old service handled license calls for some clients, written in Java and end of life
     * Imported encryption keys from legacy service to modern key-service and audited for any discrepancies in response
     * Traffic migration completed without incident, eliminated expensive infrastructure and impediments to upcoming roadmap work
