@@ -1,9 +1,14 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1 class="title">
-  {{ section.title }}
-</h1>
+  <h1>{{ section.title }}</h1>
+  {{ section.content | safe }}
 
-{{ section.content | safe }}
+  {% if section.pages | length > 0 %}
+    <ul>
+      {% for page in section.pages %}
+        <li><a href="{{ page.permalink }}">{{ page.title }}</a></li>
+      {% endfor %}
+    </ul>
+  {% endif %}
 {% endblock content %}

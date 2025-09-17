@@ -1,5 +1,6 @@
 +++
 title = "Vita"
+template = "section/vita.html"
 +++
 
 I've had several incredible positions in my career, including multiple household names. It took a few years to really understand where in the stack I'm really the most useful. Recently I've felt most impactful:
