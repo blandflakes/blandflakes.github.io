@@ -8,6 +8,7 @@ This site is an assortment of artifacts, opinions, and experiences from my years
 
 # Changelog
 
+* 2025-09-17: Tools
 * 2025-09-16: Fiddle for far too long with subsections and pages.
 * 2025-09-15: Nav bar, rough section sketch, set up publish
 * 2025-09-14: Resume rough draft, fall colors
