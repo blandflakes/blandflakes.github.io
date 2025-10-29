@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Terror-Driven Software Development</title>
+    <link rel="stylesheet" href="https://blandflakes.github.io/main.css">
+  </head>
+
+  <body>
+    <header class="site-header">
+      <nav class="top-nav">
+        <ul>
+          <li><a href="https://blandflakes.github.io/">Home</a></li>
+          <li><a href="https://blandflakes.github.io/vita">Résumé</a></li>
+          <li><a href="https://blandflakes.github.io/projects">Projects</a></li>
+          <li><a href="https://blandflakes.github.io/tools">Tools</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="section">
+      <div class="container">
+        
+  <article>
+    <h1 class="title">
+      Technology Radar
+    </h1>
+    <p>I'm not a fan of the granularity used by various tech publications; for personal use, I think three categories are plenty:</p>
+<ul>
+<li><strong>use</strong>: technology I actively rely on and believe is a sound investment</li>
+<li><strong>trial</strong>: technology about which I'm optimistic enough to experiment for promotion to "use"</li>
+<li><strong>avoid</strong>: technology that I've either used and discarded, or that I have no plans to trial</li>
+</ul>
+<p>This page is extremely opinionated; it represents my <em>preferences</em>, not a judgement of where the industry should be going.</p>
+<h2 id="languages">Languages</h2>
+<h3 id="clojure">Clojure</h3>
+<p><strong>avoid</strong></p>
+<p>Clojure is a beautiful language that I just cannot recommend. My biggest complaints are:</p>
+<ul>
+<li>the build tools are either esoteric or too simplistic</li>
+<li>the namespace/import macro should be a felony. I shouldn't need a cheat sheet</li>
+<li>I think lazy evaluation should be opt-in, not the default</li>
+<li>the final nail in the coffin, however, was dynamic typing. I spent too much time chasing incoherent nil references around a call stack that was all to happy to punt them up to the next caller. I appreciate the elegance afforded, but I'm just far more productive with a powerful type system that lets me type errors out of existence at compiletime.</li>
+</ul>
+<h3 id="elixir">Elixir</h3>
+<p><strong>trial</strong></p>
+<p>I'm under no delusions about how niche Elixir is. However, I'm convinced of two things:</p>
+<ol>
+<li>that the BEAM presents the best semantics for modern service development (it's what Java's Loom is (rather incompletely) iterating toward, after all)</li>
+<li>that Phoenix Liveview has incredible ROI for engineers who aren't heavily invested in Javascript</li>
+</ol>
+<p>Since I spend most of my time in backend or infrastructure, I'm not particularly interested in heavy Javascript investment. This creates a gap in my tools, where it's a lot of work to create anything involving a web presence or user interface. I think of Elixir as a high-level DSL for creating web systems.</p>
+<h3 id="java">Java</h3>
+<p><strong>avoid</strong></p>
+<p>Java is an acceptible, if uninspiring language. Its biggest flaws are:</p>
+<ul>
+<li>nullability by default</li>
+<li>mutability by default</li>
+<li>extreme verbosity</li>
+<li>unacceptably low-level concurrency</li>
+</ul>
+<p>It's possible to write quite reasonable Java, but you're going to find yourself at odds with the default culture of the ecosystem, which is overwhelmingly dominated by Spring Boot.</p>
+<p>In all my years writing Scala, I felt continual relief that I simply didn't have to deal with all the minutiae required to write threadsafe, "effective" Java. The idea of returning to all those code review debates and distractions from solving problems fills me with dread. Java is an institution, the JVM is incredible, and it's 2025.</p>
+<h3 id="python">Python</h3>
+<p><strong>avoid</strong></p>
+<p>This is the most successful language that still doesn't know how to put its pants on in the morning. Python is effective at a broad variety of jobs, is the primary game in town for machine learning applications, and yet there still isn't a compelling build tool story (though <code>uv</code> is promising!). I think significant whitespace is silly, and I think static types are table stakes.</p>
+<p>This is a language that I'd advise others to learn, even though I have no use for it.</p>
+<h3 id="ruby">Ruby</h3>
+<p><strong>use</strong></p>
+<p>This is a strange one. Ruby is my go-to scripting language at the moment. Were it not for Elixir, I'd also consider Ruby best-in-class for rapid web development. I still think it's a slam dunk choice for the job, even though Elixir embodies more of the characteristics that I look for in a tool.</p>
+<p><em>If</em> I were trying to use a fully dynamic language, Ruby has the right balance of expressiveness and ease of use for the way I think about code. It's still the first language I reach for when a bash script exceeds about 2 lines, but I don't know if there's a reason to do much more of it if I'm getting into Elixir.</p>
+<h3 id="rust">Rust</h3>
+<p><strong>trial</strong></p>
+<p>Rust is a language with a lot of hype. I've long been skeptical that it's a great fit for the kind of work I do. For the most part, a garbage-collected language offers the right tradeoffs for productivity. However, with Scala's future somewhat in doubt, there's something of an opportunity to try to stretch a little. Rust is probably the only modern language that has any appealing characteristics to me, and it would let me step into domains in which JVM languages aren't necessarily as apt. It's especially interesting to see how much Rust is showing up in data infrastructure solutions.</p>
+<h3 id="scala">Scala</h3>
+<p><strong>use</strong>, possibly transition to <strong>avoid</strong>.</p>
+<p>Scala is the closest language to what I consider the ideal professional programming language. I expect garbage collection, with succinct syntax, functional constructs, static types, excellent performance, and a concurrency layer more abstracted than that offered by, say, Java.</p>
+<p>Scala does all of this. Unfortunately, Scala can't get out of its own way. Professionally, I've spent far more time than is acceptible dealing with <code>sbt</code>'s intricacies and breaking changes. Scala 3 was a lesson in how not to release a new version of a language, and there is no justification for creating a whitespace-significant language in 2025. Between the astounding loss in momentum and the high ratio of drama/scandal for such a small community, it's difficult to continue to recommend Scala, even though <em>there are no mainstream languages to take its place.</em></p>
+
+  </article>
+
+      </div>
+    </section>
+  </body>
+</html>
