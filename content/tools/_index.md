@@ -17,7 +17,7 @@ Historically: Clojure, Python
 
 cats-effect, http4s, java.util.concurrent, java.nio, protobuf, avro, parquet
 
-## Infrastucture
+## Infrastructure
 
 * AWS
   * Athena
