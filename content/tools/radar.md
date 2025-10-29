@@ -70,7 +70,7 @@ This is a strange one. Ruby is my go-to scripting language at the moment. Were i
 
 **trial**
 
-Rust is a language with a lot of hype. I've long been skeptical that it's a great fit for the kind of work I do. For the most part, a garbage collected language offers the right tradeoffs for productivity. However, with Scala's future somewhat in doubt, there's something of an opportunity to try to stretch a little. Rust is probably the only modern language that has any appealing characteristics to me, and it would let me step into domains n which JVM languages aren't necessarily as apt. It's especially interesting to see how much Rust is showing up in data infrastructure solutions.
+Rust is a language with a lot of hype. I've long been skeptical that it's a great fit for the kind of work I do. For the most part, a garbage-collected language offers the right tradeoffs for productivity. However, with Scala's future somewhat in doubt, there's something of an opportunity to try to stretch a little. Rust is probably the only modern language that has any appealing characteristics to me, and it would let me step into domains in which JVM languages aren't necessarily as apt. It's especially interesting to see how much Rust is showing up in data infrastructure solutions.
 
 ### Scala
 
